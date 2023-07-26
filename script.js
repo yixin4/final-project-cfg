@@ -7,7 +7,6 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
-
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
@@ -82,18 +81,7 @@ const questions = [
     question: 'What is 2 + 2?',
     answers: [
       { text: '4', correct: true },
-      { text: '22', correct: false },
-      { text: '3', correct: false },
-      { text: '9', correct: false },
-    ]
-  },
-  {
-    question: 'What is 16 / 4?',
-    answers: [
-      { text: '4', correct: true },
-      { text: '6', correct: false },
-      { text: '8', correct: false },
-      { text: '2', correct: false }
+      { text: '22', correct: false }
     ]
   },
   {
@@ -101,8 +89,6 @@ const questions = [
     answers: [
       { text: '6', correct: false },
       { text: '7', correct: true },
-      { text: '8', correct: false },
-      { text: '24,5', correct: false }
     ]
   },
   {
@@ -110,8 +96,6 @@ const questions = [
     answers: [
       { text: '144', correct: false },
       { text: '34', correct: true },
-      { text: '22', correct: false },
-      { text: '12', correct: false },
     ]
   }
 ]
